@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKIGAI Hotel - Trang Chi Tiết Phòng</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+</head>
+<style>
+  /* CSS hiện đại cho nút Đặt Phòng */
+  .btn.btn-long {
+      background-color: #ffffff; /* Màu nền trắng */
+      color: black; /* Màu chữ ban đầu */
+      padding: 12px 24px; /* Đệm cho nút */
+      border-radius: 30px; /* Bo góc mềm mại hơn */
+      font-size: 18px; /* Kích thước chữ */
+      font-weight: bold; /* Chữ đậm */
+      text-transform: uppercase; /* Chữ in hoa */
+      transition: background-color 0.4s ease, color 0.4s ease, border 0.4s ease, transform 0.2s ease; /* Hiệu ứng mượt mà */
+      border: 2px solid transparent; /* Không có viền lúc đầu */
+      cursor: pointer; /* Con trỏ chuột */
+      width: 1300px; /* Chiều dài của nút */
+      text-align: center; /* Căn giữa nội dung */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ */
+  }
+  
+  /* Hiệu ứng hover */
+  .btn.btn-long:hover {
+      background-color: #007BFF; /* Màu xanh biển khi hover */
+      color: #ffffff; /* Màu chữ trắng khi hover */
+      border-color: #007BFF; /* Khung viền cùng màu khi hover */
+      box-shadow: 0 12px 24px rgba(0, 123, 255, 0.4); /* Bóng đổ mạnh hơn khi hover */
+      transform: translateY(-3px); /* Di chuyển nút nhẹ lên khi hover */
+  }
+  
+  /* Hiệu ứng khi nhấp vào nút */
+  .btn.btn-long:active {
+      background-color: #0056b3; /* Màu đậm hơn khi nhấp */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Giảm bóng đổ khi nhấn */
+      transform: translateY(0); /* Đưa nút trở về vị trí ban đầu */
+  }
+  
+  
+    </style>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <header style="background-color: #000;" class="header" id="navigation-menu">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"> <img src="/image/logoikigai/image-removebg-preview.png" alt=""></a>
+                <ul class="nav-menu">
+                    <li> <a href="/index.html" class="header-nav-link">Home</a> </li>
+                    <li> <a href="/Additional_pages/rooms.html" class="header-nav-link">Rooms</a> </li>
+                    <li> <a href="/Additional_pages/facilities.html" class="header-nav-link">Facilities</a> </li>
+                    <li> <a href="/Additional_pages/contact.html" class="header-nav-link">Contact us</a> </li>
+                    <li> <a href="/Additional_pages/about.html" class="header-nav-link">About us</a> </li>
+                </ul>
+                <div class="header-login">
+                    <a href="/Additional_pages/login.html" type="button" class="btn bg-dark text-white btn-outline-dark shadow-none me-lg-3 me-2">Login</a>
+                    <a href="/Additional_pages/login.html" type="button" class="btn bg-dark text-white btn-outline-dark shadow-none">Register</a>
+                </div>
+                <div class="hambuger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="my-5 px-4">
+                <h1 class="fw-bold h-font text-center">Chi Tiết Phòng</h1>
+                <div class="h-line bg-dark"></div>
+                <p class="text-center">Khách sạn IKIGAI tự hào cung cấp những phòng nghỉ hiện đại và tiện nghi nhất, giúp bạn tận hưởng kỳ nghỉ thoải mái và thư giãn nhất.</p>
+                <div class="carousel-inner">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-item active">
+                            <img src="https://file.hstatic.net/200000044142/article/thiet_ke_noi_that_phong_ngu_khach_san2_824a069e6a314706874145b548d1ea6d.jpg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://thietkenoithatkhachsan.com/Portals/88/DNNGo_PhotoAlbums/65286/26706/thiet-ke-noi-that-vinhomes-thang-long%20(17).jpeg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9d7eaf80575073.5ce52a2636f54.jpg" class="d-block" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="fitness-info">
+              <div class="fitness__overview" >
+                  <h2 class="info-title">Tổng Quan</h2>
+                  <div class="fitness-content">
+                      <div class="content__des"><span class="content__title">Loại: </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">Phòng cao cấp </span>
+                      </div>
+                      <div class="content__des"><span class="content__title">Địa Điểm:</span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">Lầu 60 </span>
+                      </div>
+                      <div class="content__des"><span class="content__title">Guests:</span> 
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">Phòng 15 người </span>
+                      </div>
+                    </div>
+          
+                  <div class="col-md-5 px-lg-3 px-md-3 px-0" style="position: absolute; right: 0; width: 550px;">
+                    <div class="features mb-3">
+                        <h6 class="mb-1">Features</h6>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">4 Rooms</span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">2 Bathroom</span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">2 Balcony</span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">4 Sofa</span>
+                    </div>
+                    <div class="facilities mb-3">
+                      <h6 class="mb-1">Facilities</h6>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">Wifi</span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">Television</span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">AC</span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">Room heater</span>
+                  </div>
+                </div>       
+                <div class="logo-ikigai">
+                  <img src="/image/logoikigai/image-removebg-preview.png" alt="Fitness Club Logo">  
+              </div>
+            </div>
+        </div>
+          </div>
+            <div class="fitness-info">
+                <div class="fitness__overview">
+                    <h2 class="info-title">Chi Tiết</h2>
+                    <div class="fitness-content">
+                        <div class="detail-content__des">
+                            <p>Chúng tôi cung cấp các loại phòng đơn, phòng đôi và phòng gia đình với đầy đủ tiện nghi.</p>
+                            <p>Đặt phòng trực tuyến và nhận ưu đãi hấp dẫn.</p>
+                            <p>Khách sạn mở cửa 24/7, phục vụ bữa sáng miễn phí cho khách lưu trú.</p>
+                            <p>Chúng tôi có chính sách hoàn hủy linh hoạt trong trường hợp khách hàng có sự cố phát sinh.</p>
+                            <p>Vui lòng liên hệ với lễ tân để biết thêm thông tin chi tiết.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fitness-info">
+                <div style="background-color: #F5F5F5;" class="fitness__overview">
+                    <h2 class="info-title">Liên Hệ</h2>
+                    <div class="fitness-content">
+                        <div class="content__des"><span class="content__title">TEL:</span> 0860004667</div>
+                    </div>
+                    <div class="logo-ikigai">
+                        <img src="/image/logoikigai/image-removebg-preview.png" alt="Fitness Club Logo">  
+                    </div>
+                </div>
+            </div>
+            <div class="contact-section mt-5">
+              <!-- Nút dài Đặt Phòng -->
+              <a href="#" class="btn btn-long" id="bookRoomBtn">Đặt Phòng Ngay</a>
+          </div>
+            <div class="fitness-Gallery">
+                <h3>Gallery</h3>
+                <div class="Gallery__image ">
+                  <img class="rounded pop pointer" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/03226480575073.5ce52a2638852.jpg" alt="">
+                  <img class="rounded pop pointer" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/583ee880575073.5ce52a26376da.jpg" alt="">
+                  <img class="rounded pop pointer" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9d7eaf80575073.5ce52a2636f54.jpg" alt="">
+                  <img class="rounded pop pointer" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2ae35c80575073.5ce52a2637dcf.jpg" alt="">
+                </div>
+              </div>
+      
+              <h3>Xem thêm về dịch vụ của chúng tôi</h3>
+              <div class="view__facilities">
+                <div class="view__carousel">
+                  <div class="promotion__img">
+                    <a href="/Additional_pages/facilities/Spa.html"><img class="rounded pop pointer" src="/image/hinh-anh-spa.jpg"></a>
+                  </div>
+                  <div class="promotion__inside">
+                    <a class="" href="/Additional_pages/facilities/Spa.html">Spa</a>
+                  </div>
+                </div>
+                <div class="view__carousel">
+                  <div class="promotion__img">
+                    <a href="/Additional_pages/facilities/poor.html"><img class="rounded pop pointer" src="/image/ami.jpg"></a>
+                  </div>
+                  <div class="promotion__inside">
+                    <a href="/Additional_pages/facilities/poor.html">Hồ Bơi </a>
+                  </div>
+                </div>
+                <div class="view__carousel">
+                  <div class="promotion__img">
+                    <a href="/Additional_pages/facilities/Restaurant.html"><img class="rounded pop pointer" src="/image/facilities/nhahang2.jpg"></a>
+                  </div>
+                  <div class="promotion__inside">
+                    <a  href="/Additional_pages/facilities/Restaurant.html" href="">Nhà Hàng</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-pAtP1c1upFv8sS7FOi+th2VbhYFqbyhbJvCDiF+QdQxd/0OwlZKIGM/X0TXCDM4PFF4tgpFz2h9t+eVqMxJz9Xw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/script.js"></script>
+    <footer class="footer-resort">
+        <div class="container grid top ">
+          <div class="box">
+            <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />
+            <p>Họ đã lấy đi những gì không thuộc về họ, và họ có trách nhiệm cho những gì họ đã làm, bao gồm cả sự thiếu sót trong việc thực hiện nghĩa vụ của mình.</p>
+            <p>Các phương thức thanh toán được chấp nhận</p>
+            <div class="payment grid">
+              <img src="https://img.icons8.com/color/48/000000/visa.png" />
+              <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+              <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+              <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+            </div>
+          </div>  
+          <div class="box">
+            <h3>Recent News</h3>
+            <ul>
+              <li>Chuyến Tham Quan Đảo Bí Mật Chỉ Dành Cho Bạn</li>
+              <li>Thư Giãn và Trốn Chạy Trong Những Nơi Ẩn Dật Tự Nhiên</li>
+              <li>Tháng Chín Tại Khách Sạn Luviana</li>
+              <li>Buổi Hòa Nhạc Trực Tiếp Tại Luviana</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>For Customers</h3>
+            <ul>
+              <li>Về Luviana</li>
+              <li>Chăm Sóc Khách Hàng/Giúp Đỡ</li>
+              <li>Tài Khoản Doanh Nghiệp</li>
+              <li>Thông Tin Tài Chính</li>
+              <li>Điều Khoản & Điều Kiện</li>
+            </ul>
+          </div>   
+          <div class="box">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>3015 Grand Ave, Cocount Grove, Merrick Way FL 123456</li>
+              <li><i class="far fa-envelope"></i> nguyenphucgiahuy1404@gmail.com </li>
+              <li><i class="far fa-phone-alt"></i>    0868004667 </li>
+              <li><i class="far fa-comments"></i>     Dịch Vụ Khách Hàng 24/7 </li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+
+    <script>
+      $('.carousel').carousel()
+      $('#myCarousel').on('slide.bs.carousel', function () {
+  // do something…
+})
+
+
+    </script>
+</body>
+</html>
+
